@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel</title>
+    <link rel="stylesheet" type="text/css" href="/css/wheel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playwrite+HR+Lijeva:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h3>Players:</h3>
+        <ul id="players"></ul>
+    </section>
+    <section id="wheelSection">
+        <h1>Choice of topic</h1>
+        <div id="wheelContainer">
+            <div id="arrowResult"></div>
+            <div id="wheel">
+                <div class="topic" data-topic="visual-hierarchy">
+                    <div class="topicTitle"><span>Visual Hierarchy</span></div>
+                </div>
+                <div class="topic" data-topic="interaction-design">
+                    <div class="topicTitle"><span>Interaction Design</span></div>
+                </div>
+                <div class="topic" data-topic="wireframe-fidelity">
+                    <div class="topicTitle"><span>Wireframe fidelity</span></div>
+                </div>
+                <div class="topic" data-topic="accessibility-inclusion">
+                    <div class="topicTitle"><span>Accessibility and inclusion</span></div>
+                </div>
+            </div>
+        </div>
+        <button id="spinButton">Spin the wheel</button>
+    </section>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>
