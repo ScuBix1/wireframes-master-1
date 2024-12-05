@@ -29,7 +29,6 @@ app.use((req, res, next) => {
   next();
 });
 app.use('/', apiRoutes);
-app.use(express.static('/public'));
 
 http.listen(PORT, () => {
   console.log(`Serveur lancé sur ${process.env.BASE_URL}:${PORT}`);
