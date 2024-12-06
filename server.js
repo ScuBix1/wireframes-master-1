@@ -14,8 +14,9 @@ const io = require('socket.io')(http);
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
-app.use('/', apiRoutes);
 app.use(express.static(__dirname+'/public'));
+app.use('/', apiRoutes);
+
 
 http.listen(PORT, () => {
   console.log(`Serveur lancé sur ${process.env.BASE_URL}:${PORT}`);
