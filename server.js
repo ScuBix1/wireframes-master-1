@@ -15,6 +15,14 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.static('public'));
+app.get('/js/index.js', function(req, res) {
+  res.set('Content-Type', 'text/javascript');
+  res.sendFile(__dirname + '/js/index.js');
+});
+app.get('/css/index.css', function(req, res) {
+  res.set('Content-Type', 'text/css');
+  res.sendFile(__dirname + '/css/index.css');
+});
 app.use('/', apiRoutes);
 
 http.listen(PORT, () => {
