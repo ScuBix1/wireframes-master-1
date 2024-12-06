@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use('/', apiRoutes);
-app.use(express.static('/public'));
+app.use(express.static(__dirname+'/public'));
 
 http.listen(PORT, () => {
   console.log(`Serveur lancé sur ${process.env.BASE_URL}:${PORT}`);
