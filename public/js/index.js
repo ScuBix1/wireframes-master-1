@@ -8,7 +8,7 @@ const topics = [
 const roomNumber = window.location.href.split('/')[3];
 
 const socket = io();
-const baseUrl = 'wireframes-master-1.onrender.com';
+const baseUrl = 'https://wireframes-master-1.onrender.com';
 
 if (document.getElementById('saveUsername')) {
   const usernameForm = document.getElementById('saveUsername');
