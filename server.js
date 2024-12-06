@@ -14,7 +14,7 @@ const io = require('socket.io')(http);
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
-app.use(express.static(__dirname+'/public'));
+app.use('/static', express.static(__dirname+'/public'));
 app.use('/', apiRoutes);
 
 
